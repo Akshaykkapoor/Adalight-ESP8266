@@ -24,7 +24,7 @@
 const int SerialSpeed = 2000000; 
 
 
- NeoPixelBus strip = NeoPixelBus(pixelCount, pixelPin);
+ NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(pixelCount,pixelPin);
  uint8_t*  pixelsPOINT = (uint8_t*)strip.Pixels(); ///  used for direct access to pixelbus buffer...
 
 
